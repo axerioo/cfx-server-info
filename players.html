@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/players.css">
+    <link rel="shortcut icon" href="./img/axer.svg" type="image/x-icon">
+    <title>Players - Axer</title>
+    <script type="module" src="./js/index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="title">
+                <span id="server-name-text">-</span>
+                <div id="server-players" class="small-info">
+                    <img src="./img/users.svg" alt="Users">
+                    <span id="server-players-text">-</span>
+                </div>
+                <div id="server-ip" class="small-info">
+                    <img src="./img/unplug.svg" alt="IP">
+                    <span id="server-ip-text">-</span>
+                </div>
+            </div>
+            <div class="server-search">
+                <div class="ss-content">
+                    <input type="text" id="server-id" placeholder="Server ID">
+                    <div id="server-id-button" class="icon">
+                        <img src="./img/search.svg" alt="Search">
+                    </div>
+                    <div id="add-server-id" class="icon" title="Add server ID">
+                        <img src="./img/plus.svg" alt="">
+                    </div>
+                </div>
+                <div class="ss-content">
+                    <div id="display-servers" class="icon" title="Display saved servers">
+                        <img src="./img/star.svg" alt="Saved ID's">
+                    </div>
+                    <div id="show-resources" class="icon" title="Display server resources">
+                        <img src="./img/package-search.svg" alt="Show resources">
+                    </div>
+                    <div id="refresh-button" class="icon" title="Refresh data">
+                        <img src="./img/refresh.svg" alt="Refresh">
+                    </div>
+                    <div id="delete-data" class="icon" title="Clear all data">
+                        <img src="./img/trash.svg" alt="Delete data">
+                    </div>
+                    <div id="timer-control" class="icon" title="Switch timer">
+                        <img src="./img/pause.svg" alt="Pause">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="servers-container"></div>
+        <section>
+            <input type="text" id="search-input" placeholder="Search players">
+            <div id="refresh-timer" class="small-info">
+                <img src="./img/refresh.svg" alt="Refresh">
+                <span id="refresh-timer-text">-</span>
+            </div>
+            <div id="last-update" class="small-info">
+                <img src="./img/calendar.svg" alt="Calendar">
+                <span id="last-update-text">-</span>
+            </div>
+        </section>
+        <section id="resources-container"></section>
+        <table>
+            <tr id="table-header">
+                <th class="table-id">ID</th>
+                <th class="table-name">Name</th>
+                <th class="table-socials">Socials</th>
+                <th class="table-ping">Ping</th>
+                <th class="table-moreinfo">More</th>
+            </tr>
+        </table>
+        <footer>
+            <div class="footer-left">
+                <p><a href="https://github.com/axerioo" target="_blank">Axer</a> - <a href="https://github.com/igorovh" target="_blank">igorovh</a></p>
+            </div>
+            <div class="footer-right">
+                <p>This page is not affiliated with <a href="https://cfx.re/" target="_blank">Cfx.re</a> in any way.</p>
+                <p>External API is used, data may not be available.</p>
+                <p>If any error occurs, please check your console.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
