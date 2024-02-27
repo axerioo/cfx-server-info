@@ -189,7 +189,6 @@ td {
 .table-socials {
     display: flex;
     justify-content: center;
-    user-select: none;
     width: 15%;
     gap: 8px;
 }
@@ -219,7 +218,6 @@ td {
 .table-moreinfo {
     display: flex;
     justify-content: center;
-    user-select: none;
     width: 15%;
 }
 
